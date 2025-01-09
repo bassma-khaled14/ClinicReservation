@@ -1,0 +1,39 @@
+.signup h2{
+  margin-right: 10px;
+  padding: 8px;
+
+}
+.signup {
+  margin-left: 0px;
+  max-width: 300px;
+}
+.signup input
+{
+  width: 100%;
+  font-size: 20px;
+  font-style: inherit;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.signup button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(17, 106, 101);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.signup button :hover {
+  background-color:  rgb(0, 179, 149);
+}
+
+
+.signup label{
+  margin: 10px;
+  margin-bottom: auto;
+}
+.optionRole{
+  margin: 1px;
+}

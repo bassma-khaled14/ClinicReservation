@@ -1,0 +1,35 @@
+.signin h2{
+  margin-right: 10px;
+  padding: 8px;
+
+}
+.signin {
+  margin-left: 0px;
+  max-width: 300px;
+}
+.signin input
+{
+  width: 100%;
+  font-size: 20px;
+  font-style: inherit;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.signin button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(17, 106, 101);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.signin button :hover {
+  background-color:  rgb(0, 179, 149);
+}
+
+.signin .error-message {
+  color: red;
+  margin-top: 10px;
+}

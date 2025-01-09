@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysqlimg
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: VFfJNOgbjekI6dHLTqRJ
+      MYSQL_DATABASE: bwibwlhviwmvs2e0nfwh
+    ports:
+      - "3306:3306"
+  backend:
+    image: nodejsimg
+    container_name: backend-container
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: VFfJNOgbjekI6dHLTqRJ
+      DB_NAME: bwibwlhviwmvs2e0nfwh
+    ports: 
+     - 8000:8005
+    depends_on:
+      - mysql
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    container_name: frontend-container
+    ports:
+      - "3000:80" # Map port 3000 on the host to port 80 in the container

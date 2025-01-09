@@ -1,0 +1,11 @@
+# Use an official MySQL runtime as a parent image
+FROM mysql2:8.0.26
+# Set the root password for MySQL (change 'yourpassword' to your desired password)
+ENV MYSQL_ROOT_PASSWORD VFfJNOgbjekI6dHLTqRJ
+
+# Create a new database (change 'yourdbname' to your desired database name)
+ENV MYSQL_DATABASE bwibwlhviwmvs2e0nfwh,
+
+
+# Copy the initialization script to the Docker image
+COPY ./init.sql /docker-entrypoint-initdb.d/
